@@ -35,5 +35,5 @@ $ bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test -
 ### Producing Messages
 run producer.py from this repo to produce messages
 ```sh
-$ pthon3 producer.py
+$ python3 producer.py
 ```
