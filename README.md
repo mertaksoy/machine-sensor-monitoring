@@ -35,6 +35,9 @@ you should see
 /__ / .__/\_,_/_/ /_/\_\   version 2.4.5
    /_/
 ```
+[Download](https://mvnrepository.com/artifact/org.apache.spark/spark-streaming-kafka-0-8-assembly_2.11) Spark Streaming Kafka Assembly jar (The version which i am using is 2.4.5). We will it it to stream data from Kafka.
+**Important:** The version must match with Spark
+
 
 ### Start Zookeper
 switch to folder where you un-tar kafka_2.12-2.5.0 
@@ -61,4 +64,10 @@ $ bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test -
 run producer.py from this repo to produce messages
 ```sh
 $ python3 producer.py
+```
+
+### Streaming Data
+run streamer.py to stream data from Kafka
+```sh
+$ spark-2.4.5-bin-hadoop2.7/bin/spark-submit --jars spark-streaming-kafka-0-8-assembly_2.11-2.4.5.jar /Users/maksoy/git/machine-sensor-monitoring/src/steamer.py
 ```
