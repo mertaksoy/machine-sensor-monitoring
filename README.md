@@ -5,14 +5,39 @@
 Install required packages:
   - pip install kafka-python
   - pip install kafka-utils
+  - pip install pyspark
  
 [Download](https://kafka.apache.org/downloads.html) Kafka and un-tar it. (The version which i am using is 2.5.0)
 ```sh
 $ tar -xzf kafka_2.12-2.5.0.tgz
-$ cd kafka_2.12-2.5.0
+```
+
+[Download](https://spark.apache.org/downloads.html) Spark and un-tar it. (The version which i am using is 2.4.5)
+```sh
+$ tar -xzf spark-2.4.5-bin-hadoop2.7.tgz
+```
+
+Set Spark Home
+```sh
+$ export SPARK_HOME="/Users/maksoy/Development/Tools/spark-2.4.5-bin-hadoop2.7"
+$ export PATH="$SPARK_HOME/bin:$PATH"
+```
+
+To test pyspark, run in terminal
+```sh
+$ pyspark
+```
+you should see
+```sh
+   ____              __
+  / __/__  ___ _____/ /__
+ _\ \/ _ \/ _ `/ __/  '_/
+/__ / .__/\_,_/_/ /_/\_\   version 2.4.5
+   /_/
 ```
 
 ### Start Zookeper
+switch to folder where you un-tar kafka_2.12-2.5.0 
 ```sh
 $ bin/zookeeper-server-start.sh config/zookeeper.properties
 ```
