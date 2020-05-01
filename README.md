@@ -6,6 +6,7 @@ Install required packages:
   - pip install kafka-python
   - pip install kafka-utils
   - pip install pyspark
+  - pip install influxdb-client
  
 [Download](https://kafka.apache.org/downloads.html) Kafka and un-tar it. (The version which i am using is 2.5.0)
 ```sh
@@ -67,7 +68,7 @@ $ python3 producer.py
 ```
 
 ### Streaming Data
-run streamer.py to stream data from Kafka
+run streamer.py to stream data from Kafka to influxDB
 ```sh
 $ spark-2.4.5-bin-hadoop2.7/bin/spark-submit --jars spark-streaming-kafka-0-8-assembly_2.11-2.4.5.jar /Users/maksoy/git/machine-sensor-monitoring/src/steamer.py
 ```
