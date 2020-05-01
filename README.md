@@ -36,7 +36,7 @@ you should see
 /__ / .__/\_,_/_/ /_/\_\   version 2.4.5
    /_/
 ```
-[Download](https://mvnrepository.com/artifact/org.apache.spark/spark-streaming-kafka-0-8-assembly_2.11) Spark Streaming Kafka Assembly jar (The version which i am using is 2.4.5). We will it it to stream data from Kafka.
+[Download](https://mvnrepository.com/artifact/org.apache.spark/spark-streaming-kafka-0-8-assembly_2.11) Spark Streaming Kafka Assembly jar (The version which i am using is 2.4.5). We will use it it to stream data from Kafka.
 **Important:** The version must match with Spark
 
 
