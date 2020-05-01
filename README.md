@@ -1,6 +1,8 @@
 # machine-sensor-monitoring
 
-![Linear Regression](https://github.com/mertaksoy/machine-sensor-monitoring/blob/master/images/monitoring-influxdb.png "InfluxDB Dashboard")
+![InfluxDB Dashboard](https://github.com/mertaksoy/machine-sensor-monitoring/blob/master/images/monitoring-influxdb.png "InfluxDB Dashboard")
+
+![Data Streaming Diagram](https://github.com/mertaksoy/machine-sensor-monitoring/blob/master/images/machine-data-streaming-diagram.png "InfluxDB Dashboard")
 
 ### Before starting
 Install required packages:
